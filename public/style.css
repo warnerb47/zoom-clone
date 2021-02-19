@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Mega', sans-serif;
+}
+
+.main {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+nav {
+    display: none;
+    /* display: flex; */
+    height: 10vh;
+    background-color: #343434;
+    align-items: center;
+    justify-content: space-between;
+}
+.line{
+    height: 5px;
+    width: 30px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+.hamburger{
+    margin-right: 10px;
+}
+
+.left{
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.left > .videos-container {
+    display: flex;
+    flex: 0.8;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.left > .videos-container::-webkit-scrollbar {
+    width: 0.50rem;
+}
+.left > .videos-container::-webkit-scrollbar-track{
+    background: #1c1e28;
+}
+
+.left > .videos-container::-webkit-scrollbar-thumb {
+    background: #343434;
+}
+
+.left > .controls-container {
+    display: flex;
+    flex: 0.2;
+    background-color: rgb(11, 11, 27);
+}
+.left > .videos-container > .video-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.left > .videos-container > .video-grid > video {
+    height: 300px;
+    width: 300px;
+    border: 2px solid grey;
+    border-radius: 10%;
+    margin: 10px;
+}
+
+.left > .controls-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left > .controls-container > .controls-left {
+    display: flex;
+    flex-direction: row;
+}
+.left > .controls-container > .controls-left > .contole-button,
+.left > .controls-container > .controls-right > .contole-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+    margin: 10px;
+}
+i{
+    font-size: 30px;
+}
+.right{
+    flex: 0.2;
+    background-color: rgb(41, 39, 39);
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-message > .header,
+.right > .header{
+    flex: 0.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mini-message > .content,
+.right > .content{
+    flex: 0.8;
+}
+.mini-message > footer,
+.right > .footer{
+    flex: 0.1;
+    display: flex;
+}
+
+.mini-message > .footer > input,
+.right > .footer > input{
+    background-color: transparent;
+    font-size: large;
+    outline: none;
+    width: 100%;
+}
+.text-white{
+    color: white;
+}
+.text-red{
+    color: rgb(146, 34, 34);
+}
+
+.mini-message{
+    display: none;
+    background-color: rgb(41, 39, 39);
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 72vh;
+}
+
+.message {
+    margin-top: 1rem;
+}
+
+.timeSender{
+    display: flex;
+    flex-direction: row;
+}
+.time{
+    flex-grow: 0.1;
+    font-size: 15px;
+    color:#aaaaaa
+}
+.sender {
+    font-weight: bold;
+    font-size: 15px;
+}
+.sender::first-letter {
+    text-transform: uppercase;
+}
+.messageText{
+    font-size: 12px;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 900px) {
+    .right {
+        display: none;
+    }
+    nav {
+        display: flex;
+    }
+    .main {
+        height: 90vh;
+    }
+    .left{
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .left > .videos-container > .video-grid > video {
+        height: 35vh;
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .left > .controls-container {
+        display:  none;
+    }
+    .left > .videos-container {
+        flex: 1;
+    }
+    .left > .videos-container > .video-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .left > .videos-container > .video-grid > video {
+        height: 35vh;
+        width: 70vw;
+    }
+
+    .mini-message{
+        height: 90vh;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My awesome chat app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+</head>
+<script>
+    const roomId = '<%= roomId %>';
+    const port = '<%= port %>';
+</script>
+<body>
+    <nav>
+        <h1 class="text-white"> video chat </h1>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="mini-message">
+        <div class="header text-white">
+            <h1>Messages</h1>
+        </div>
+        <div class="content"></div>
+        <div class="footer">
+            <input type="text" placeholder="Entrer votre message ....">
+        </div>
+    </div>
+    </div>
+    <div class="main">
+        <div class="left">
+            <div class="videos-container">
+                <div class="video-grid">
+                </div>
+            </div>
+
+            <div class="controls-container">
+                <div class="controls-left">
+                    <div id="muteBtn" class="contole-button text-white">
+                        <i class="fas fa-microphone"></i>
+                        <span>activé</span>
+                    </div>
+                    <div id="camBtn" class="contole-button text-white">
+                        <i class="fas fa-video"></i>
+                        <span>allumé</span>
+                    </div>
+                    <div id="startCapturebtn" class="contole-button text-white">
+                        <i class="fas fa-desktop"></i>
+                        <span>présenter</span>
+                    </div>
+                </div>
+                <div class="controls-right">
+                    <div id="quitBtn" class="contole-button">
+                        <i class="fas fa-sign-out-alt text-red"></i>
+                        <span class="text-red">quitter</span>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="right">
+            <div class="header text-white">
+                <h1>Messages</h1>
+            </div>
+            <div class="content">
+                <ul id="message-list">
+
+                </ul>
+            </div>
+            <div class="footer">
+                <input id="inputMessage" class="text-white" type="text" placeholder="Entrer votre message ....">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
