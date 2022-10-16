@@ -104,6 +104,10 @@ i{
     flex-direction: column;
 }
 
+.right > .content {
+    overflow-y: scroll;
+}
+
 .right > .content > .message-list{
     list-style: none;
     display: flex;
