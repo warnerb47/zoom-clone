@@ -104,6 +104,16 @@ i{
     flex-direction: column;
 }
 
+.right > .content > .message-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.right > .content > .message-list > li{
+    margin-bottom: 1rem;
+}
+
 .mini-message > .header,
 .right > .header{
     flex: 0.1;
