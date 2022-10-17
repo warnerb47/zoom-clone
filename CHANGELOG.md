@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/warnerb47/zoom-clone/compare/v1.1.0...v1.2.0) (2022-10-17)
+
+
+### Features
+
+* add google font ([9427dba](https://github.com/warnerb47/zoom-clone/commit/9427dba17f45eb99749df117c88d1dc02545383b))
+* add home page nav ([28b63bc](https://github.com/warnerb47/zoom-clone/commit/28b63bc3714c13151802425ea8f22760b9b5e165))
+
 ## [1.1.0](https://github.com/warnerb47/zoom-clone/compare/v1.0.0...v1.1.0) (2022-10-16)
 
 
