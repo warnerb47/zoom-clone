@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/warnerb47/zoom-clone/compare/v1.2.0...v1.3.0) (2022-10-21)
+
+
+### Features
+
+* add content section ([3e5f1f7](https://github.com/warnerb47/zoom-clone/commit/3e5f1f7dae0a5ca0c1c0368e9a38b5d55f19d128))
+
+
+### Bug Fixes
+
+* zoom-clone to zoom clone ([ea02927](https://github.com/warnerb47/zoom-clone/commit/ea029270885774f6bbfbda4d3d0911b1538b01ea))
+
 ## [1.2.0](https://github.com/warnerb47/zoom-clone/compare/v1.1.0...v1.2.0) (2022-10-17)
 
 
