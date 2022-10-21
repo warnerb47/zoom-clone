@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/warnerb47/zoom-clone/compare/v1.3.0...v2.0.0) (2022-10-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* zoom clone to zoom clone breaking change
+
+### Bug Fixes
+
+* zoom clone to zoom clone breaking change ([0755ae0](https://github.com/warnerb47/zoom-clone/commit/0755ae0143a9e27edad7f241919b996d170c5b63))
+
 ## [1.3.0](https://github.com/warnerb47/zoom-clone/compare/v1.2.0...v1.3.0) (2022-10-21)
 
 
